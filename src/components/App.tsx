@@ -28,7 +28,7 @@ export const App = () => {
           {`
             body {
               margin: 0;
-              background-color: ${colors.lightestGreen};
+              background-color: ${colors.green1};
               font-family: "Helvetica";
               line-height: 1.5;
               background-image: url(${rain});
