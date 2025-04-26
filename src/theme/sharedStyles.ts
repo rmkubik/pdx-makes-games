@@ -11,7 +11,7 @@ export const borderSmall = {
 
 export const outlineWithShadowSmall = {
   ...borderSmall,
-  boxShadow: `2px 2px ${colors.offBlack}`,
+  boxShadow: `4px 4px ${colors.offBlack}`,
 };
 
 export const textShadowSmall = {
