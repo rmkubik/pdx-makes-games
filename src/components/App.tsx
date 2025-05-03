@@ -5,13 +5,6 @@ import { Helmet } from "react-helmet";
 import { colors } from "src/theme/palette";
 import { Button } from "./Button";
 import { TextInput } from "./TextInput";
-import treesLayer1 from "../../images/trees-layer-1.png";
-import treesLayer2 from "../../images/trees-layer-2.png";
-import treesLayer3 from "../../images/trees-layer-3.png";
-import treesLayer4 from "../../images/trees-layer-4.png";
-import treesTileable1 from "../../images/trees-tileable-1.png";
-import treesTileable2 from "../../images/trees-tileable-2.png";
-import treesTileable3 from "../../images/trees-tileable-3.png";
 import trees1 from "../../images/trees-tile-1.png";
 import trees2 from "../../images/trees-tile-2.png";
 import trees3 from "../../images/trees-tile-3.png";
@@ -85,7 +78,13 @@ export const App = () => {
               marginBottom: "3rem",
             }}
           >
-            <Button onClick={console.log}>Take the survey!</Button>
+            <Button
+              onClick={() => {
+                window.open("https://tally.so/r/mVDA5a", "_blank")?.focus();
+              }}
+            >
+              Take the survey!
+            </Button>
           </div>
           <p>
             We will share the results of the survey on this site, publicly, so
