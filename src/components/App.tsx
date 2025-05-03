@@ -4,11 +4,12 @@ import { Section } from "./Section";
 import { Helmet } from "react-helmet";
 import { colors } from "src/theme/palette";
 import { Button } from "./Button";
-import { TextInput } from "./TextInput";
+import { EmailInput } from "./EmailInput";
 import trees1 from "../../images/trees-tile-1.png";
 import trees2 from "../../images/trees-tile-2.png";
 import trees3 from "../../images/trees-tile-3.png";
 import rain from "../../images/rain.png";
+import { SubmitButton } from "./SubmitButton";
 
 const tiledImageWidth = 351;
 const tiledImageHeight = 163;
@@ -33,7 +34,8 @@ export const App = () => {
               margin: 0;
             }
 
-            button:hover {
+            button:hover,
+            input[type="submit"]:hover {
               transform: scale(1.05) rotate(2deg);
               transition: transform 0.1s ease-in-out;
             }
@@ -95,28 +97,43 @@ export const App = () => {
             If you want to be notified when the survey results are published,
             sign up for our mailing list.
           </p>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              marginTop: "3rem",
-              marginBottom: "3rem",
-            }}
+          <form
+            action="https://buttondown.com/api/emails/embed-subscribe/pdxmakesgames"
+            method="post"
+            target="popupwindow"
+            onSubmit={() =>
+              window.open("https://buttondown.com/pdxmakesgames", "popupwindow")
+            }
+            className="embeddable-buttondown-form"
           >
             <div
               style={{
                 display: "flex",
-                gap: "0.5rem",
                 flexDirection: "row",
-                flex: "1",
-                maxWidth: "400px",
+                justifyContent: "center",
+                marginTop: "3rem",
+                marginBottom: "3rem",
               }}
             >
-              <TextInput placeholder="your@email.com" style={{ flex: "1" }} />
-              <Button onClick={console.log}>Sign up</Button>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "0.5rem",
+                  flexDirection: "row",
+                  flex: "1",
+                  maxWidth: "400px",
+                }}
+              >
+                <EmailInput
+                  id="bd-email"
+                  name="email"
+                  placeholder="your@email.com"
+                  style={{ flex: "1" }}
+                />
+                <SubmitButton>Sign up</SubmitButton>
+              </div>
             </div>
-          </div>
+          </form>
           <p>
             Portland makes games is not intended to be a community it its own
             right. We just want to share data to facilitate organizing in
