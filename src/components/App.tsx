@@ -57,8 +57,12 @@ export const App = () => {
         <Section>
           <h2>Hello!</h2>
           <p>
-            This is some information about who we are or what this website is. I
-            need to think about what belongs here still.
+            We are a small group of local dev friends looking to learn more
+            about the Portland game dev community.
+          </p>
+          <p>
+            We know there are a lot of people doing all kinds of game dev here,
+            but not a lot of data around it. Let's change that together!
           </p>
         </Section>
         <Section>
@@ -79,8 +83,8 @@ export const App = () => {
             <Button onClick={console.log}>Take the survey!</Button>
           </div>
           <p>
-            We intend to share the results of the survey on this site, publicly,
-            so that anyone can use the information to hold great games related
+            We will share the results of the survey on this site, publicly, so
+            that anyone can use the information to hold great games-related
             events in Portland.
           </p>
           <p>
@@ -90,19 +94,30 @@ export const App = () => {
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
+              flexDirection: "row",
+              justifyContent: "center",
               marginTop: "3rem",
-              marginBottom: "1rem",
+              marginBottom: "3rem",
             }}
           >
             <div
-              style={{ display: "flex", gap: "0.5rem", flexDirection: "row" }}
+              style={{
+                display: "flex",
+                gap: "0.5rem",
+                flexDirection: "row",
+                flex: "1",
+                maxWidth: "400px",
+              }}
             >
               <TextInput placeholder="your@email.com" style={{ flex: "1" }} />
               <Button onClick={console.log}>Sign up</Button>
             </div>
           </div>
+          <p style={{ marginBottom: 0 }}>
+            Portland makes games is not intended to be a community it its own
+            right. We just want to share data to facilitate organizing in
+            Portland. We hope you find it useful!
+          </p>
         </Section>
       </main>
       <div
