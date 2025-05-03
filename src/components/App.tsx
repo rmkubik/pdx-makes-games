@@ -118,11 +118,12 @@ export const App = () => {
               <Button onClick={console.log}>Sign up</Button>
             </div>
           </div>
-          <p style={{ marginBottom: 0 }}>
+          <p>
             Portland makes games is not intended to be a community it its own
             right. We just want to share data to facilitate organizing in
-            Portland. We hope you find it useful!
+            Portland.
           </p>
+          <p style={{ marginBottom: 0 }}>We hope you find it useful!</p>
         </Section>
       </main>
       <div
@@ -132,12 +133,10 @@ export const App = () => {
           backgroundRepeat: `repeat-x`,
           width: "100vw",
           height: "100vh",
-          position: "absolute",
+          position: "fixed",
           bottom: 130,
           left: 0,
           backgroundSize: `${tiledImageWidth * 1}px ${tiledImageHeight * 1}px`,
-          // backgroundSize: "cover",
-          // filter: "blur(5px)",
           zIndex: -1,
         }}
       />
@@ -148,14 +147,12 @@ export const App = () => {
           backgroundRepeat: `repeat-x`,
           width: "100vw",
           height: "100vh",
-          position: "absolute",
+          position: "fixed",
           bottom: 75,
           left: 0,
           backgroundSize: `${tiledImageWidth * 1.15}px ${
             tiledImageHeight * 1.15
           }px`,
-          // backgroundSize: "cover",
-          // filter: "blur(5px)",
           zIndex: -1,
         }}
       />
@@ -166,77 +163,15 @@ export const App = () => {
           backgroundRepeat: `repeat-x`,
           width: "100vw",
           height: "100vh",
-          position: "absolute",
+          position: "fixed",
           bottom: 0,
           left: 0,
           backgroundSize: `${tiledImageWidth * 1.35}px ${
             tiledImageHeight * 1.35
           }px`,
-          // backgroundSize: "cover",
-          // filter: "blur(5px)",
           zIndex: -1,
         }}
       />
-      {/* <div
-        style={{
-          backgroundImage: `url(${treesLayer4})`,
-          backgroundPosition: `bottom center`,
-          backgroundRepeat: `repeat-x`,
-          width: "100vw",
-          height: "100vh",
-          position: "absolute",
-          bottom: 150,
-          left: 0,
-          // backgroundSize: "cover",
-          // filter: "blur(5px)",
-          zIndex: -1,
-        }}
-      />
-      <div
-        style={{
-          backgroundImage: `url(${treesLayer3})`,
-          backgroundPosition: `bottom center`,
-          backgroundRepeat: `repeat-x`,
-          width: "100vw",
-          height: "100vh",
-          position: "absolute",
-          bottom: 100,
-          left: 0,
-          // backgroundSize: "cover",
-          // filter: "blur(5px)",
-          zIndex: -1,
-        }}
-      />
-      <div
-        style={{
-          backgroundImage: `url(${treesLayer2})`,
-          backgroundPosition: `bottom center`,
-          backgroundRepeat: `repeat-x`,
-          width: "100vw",
-          height: "100vh",
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          // backgroundSize: "cover",
-          // filter: "blur(5px)",
-          zIndex: -1,
-        }}
-      />
-      <div
-        style={{
-          backgroundImage: `url(${treesLayer1})`,
-          backgroundPosition: `bottom center`,
-          backgroundRepeat: `repeat-x`,
-          width: "100vw",
-          height: "100vh",
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          // backgroundSize: "cover",
-          // filter: "blur(5px)",
-          zIndex: -1,
-        }}
-      /> */}
     </>
   );
 };
