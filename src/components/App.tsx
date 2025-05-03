@@ -39,6 +39,11 @@ export const App = () => {
               padding: 0;
               margin: 0;
             }
+
+            button:hover {
+              transform: scale(1.05) rotate(2deg);
+              transition: transform 0.1s ease-in-out;
+            }
           `}
         </style>
       </Helmet>
