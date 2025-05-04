@@ -139,7 +139,7 @@ export const App = () => {
             right. We just want to share data to facilitate organizing in
             Portland.
           </p>
-          <p style={{ marginBottom: 0 }}>We hope you find it useful!</p>
+          <p>We hope you find it useful!</p>
         </Section>
       </main>
       <div
