@@ -135,11 +135,9 @@ export const App = () => {
             </div>
           </form>
           <p>
-            Portland makes games is not intended to be a community it its own
-            right. We just want to share data to facilitate organizing in
-            Portland.
+            We're excited to share data to facilitate organizing in Portland. We
+            hope you find it useful!
           </p>
-          <p>We hope you find it useful!</p>
         </Section>
       </main>
       <div
