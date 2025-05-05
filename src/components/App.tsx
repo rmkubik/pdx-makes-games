@@ -41,6 +41,11 @@ export const App = () => {
             }
           `}
         </style>
+        <script
+          data-goatcounter="https://pdxmakesgames.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
       </Helmet>
       <main
         style={{
