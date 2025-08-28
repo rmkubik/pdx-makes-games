@@ -7,10 +7,12 @@ export const ReactChart = ({
   data,
   answerCount,
   sort,
+  label,
 }: {
   data: Record<string, number>;
   answerCount: number;
   sort?: Comparator<[string, number]>;
+  label: string;
 }) => {
   const entries = Object.entries(data);
 
@@ -55,7 +57,7 @@ export const ReactChart = ({
               }}
             >
               <span style={{ flex: 1 }}>{key}</span>
-              <span>{`${Math.floor((value / answerCount) * 100)}%`}</span>
+              <span>{`${Math.round((value / answerCount) * 100)}%`}</span>
             </div>
             <div
               style={{
@@ -78,7 +80,7 @@ export const ReactChart = ({
               justifyContent: "right",
             }}
           >
-            {`${value} responses`}
+            {`${value} ${label}`}
           </span>
         </li>
       ))}
