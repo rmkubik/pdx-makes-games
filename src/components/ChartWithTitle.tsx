@@ -13,6 +13,7 @@ export type ChartWithTitleProps = {
   csv: Csv;
   data?: { answers: Record<string, number>; answerCount: number };
   label?: string;
+  description?: string;
 };
 
 export const ChartWithTitle = ({
@@ -22,6 +23,7 @@ export const ChartWithTitle = ({
   csv,
   data,
   label = "responses",
+  description,
 }: ChartWithTitleProps) => {
   const [chartData, answerCount] = useMemo(() => {
     if (data) {
@@ -107,6 +109,7 @@ export const ChartWithTitle = ({
           {answerCount} {label}
         </span>
       </div>
+      {description ? <p>{description}</p> : null}
       <ReactChart
         data={chartData}
         answerCount={answerCount}

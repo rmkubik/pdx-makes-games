@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 export const useHeadings = () => {
   const [headings, setHeadings] = useState<HTMLElement[]>();
@@ -6,7 +6,7 @@ export const useHeadings = () => {
   // Just run on mount for now,
   // maybe should wait for headings
   // to actually mount first though?
-  useEffect(() => {
+  useLayoutEffect(() => {
     const main = document.querySelector("main");
     if (!main) throw new Error("Missing main");
 

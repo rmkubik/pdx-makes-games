@@ -6,9 +6,17 @@ export const Button = ({
   children,
   onClick,
   style = {},
-}: PropsWithChildren<{ onClick: () => void; style?: CSSProperties }>) => {
+  as: Tag = "button",
+  href,
+}: PropsWithChildren<{
+  onClick?: () => void;
+  style?: CSSProperties;
+  as?: "button" | "a";
+  href?: string;
+}>) => {
   return (
-    <button
+    <Tag
+      className="button"
       style={{
         ...outlineWithShadowSmall,
         backgroundColor: colors.darkGreen,
@@ -17,11 +25,13 @@ export const Button = ({
         fontSize: "1.15rem",
         padding: "0.5rem",
         cursor: "pointer",
+        textDecoration: "none",
         ...style,
       }}
       onClick={onClick}
+      href={href}
     >
       {children}
-    </button>
+    </Tag>
   );
 };

@@ -6,11 +6,14 @@ import trees1 from "../../images/trees-tile-1.png";
 import trees2 from "../../images/trees-tile-2.png";
 import trees3 from "../../images/trees-tile-3.png";
 import rain from "../../images/rain.png";
+import { useLayout } from "./useLayout";
 
 const tiledImageWidth = 351;
 const tiledImageHeight = 163;
 
 export const Layout = ({ children }: PropsWithChildren) => {
+  const { appMaxWidth } = useLayout();
+
   return (
     <>
       <Helmet>
@@ -30,10 +33,23 @@ export const Layout = ({ children }: PropsWithChildren) => {
               margin: 0;
             }
 
+            .button:hover,
             button:hover,
             input[type="submit"]:hover {
               transform: scale(1.05) rotate(2deg);
               transition: transform 0.1s ease-in-out;
+            }
+
+            main {
+              max-width: ${appMaxWidth}px;
+            }
+
+            main {
+              padding: 2rem;
+
+              @media (max-width: 750px) {
+                padding: 1rem;
+              }
             }
           `}
         </style>
@@ -45,11 +61,10 @@ export const Layout = ({ children }: PropsWithChildren) => {
       </Helmet>
       <main
         style={{
-          maxWidth: "650px",
+          // maxWidth: "650px",
           display: "flex",
           flexDirection: "column",
           gap: "2rem",
-          padding: "2rem",
           marginTop: "2rem",
           margin: "0 auto",
         }}
