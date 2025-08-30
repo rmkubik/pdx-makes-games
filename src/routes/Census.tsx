@@ -772,7 +772,8 @@ export const Census = () => {
           <Heading as="h4">Anything you'd like to plug on the way out?</Heading>
           <p>
             Here are the links everyone shared during the survey. If you'd like
-            to remove your links or add new ones, please reach out!
+            to remove your links or add new ones,{" "}
+            <a href="mailto:pdxmakesgames@gmail.com">please reach out</a>!
           </p>
           <List
             items={[
