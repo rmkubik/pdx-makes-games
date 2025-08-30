@@ -413,6 +413,33 @@ export const Census = () => {
               "God Simulator",
             ])}
           />
+          <Heading as="h3">Tell your story</Heading>
+          <p>
+            Many people also shared cool career stories with us! We didn't want
+            to publish these unless people opted in to that explicitly.
+          </p>
+          <p>
+            Whether you've been doing this for years or are just starting out,
+            we'd love to hear your stories!
+          </p>
+          <p>We will post submissions on this site.</p>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              marginTop: "2rem",
+              marginBottom: "1rem",
+            }}
+          >
+            <Button
+              onClick={() => {
+                window.open("https://tally.so/r/wdOZaz", "_blank")?.focus();
+              }}
+            >
+              Tell your story!
+            </Button>
+          </div>
         </Section>
         <Section>
           <Heading as="h2" withBackToTop>

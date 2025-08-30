@@ -116,6 +116,32 @@ export const Home = () => {
           hope you find it useful!
         </p> */}
       </Section>
+      <Section>
+        <h2>PDX Games Career Stories</h2>
+        <p>Share your career history with other Portland game developers!</p>
+        <p>
+          Any definition of career is welcome here whether you make games full
+          time, part time, or as a hobbyist. We want to hear your stories!
+        </p>
+        <p>We will post submissions on the site!</p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "2rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <Button
+            onClick={() => {
+              window.open("https://tally.so/r/wdOZaz", "_blank")?.focus();
+            }}
+          >
+            Tell your story!
+          </Button>
+        </div>
+      </Section>
     </>
   );
 };
