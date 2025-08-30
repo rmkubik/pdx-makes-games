@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { Heading } from "./Heading";
 import { ReactChart } from "./ReactChart";
-import { Csv } from "src/csv/Csv";
+import { Csv, CsvColumnFilter, CsvColumnTransformer } from "src/csv/Csv";
 
 export type ChartWithTitleProps = {
   title: string;
@@ -14,6 +14,8 @@ export type ChartWithTitleProps = {
   data?: { answers: Record<string, number>; answerCount: number };
   label?: string;
   description?: string;
+  transformers?: CsvColumnTransformer[];
+  filters?: CsvColumnFilter[];
 };
 
 export const ChartWithTitle = ({
@@ -24,13 +26,24 @@ export const ChartWithTitle = ({
   data,
   label = "responses",
   description,
+  transformers = [],
+  filters = [],
 }: ChartWithTitleProps) => {
   const [chartData, answerCount] = useMemo(() => {
     if (data) {
       return [data.answers, data.answerCount];
     }
 
-    const column = csv.getColumnByTitle(title);
+    let column = csv.getColumnByTitle(title);
+    column = transformers.reduce(
+      (transformedColumn, transformer) =>
+        transformedColumn.transform(transformer),
+      column
+    );
+    column = filters.reduce(
+      (filteredColumn, filter) => filteredColumn.filter(filter),
+      column
+    );
 
     switch (columnType) {
       case "single":

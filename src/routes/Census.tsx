@@ -732,6 +732,29 @@ export const Census = () => {
             title="How do you keep in touch with your communities?"
             columnType="multi"
             sortType={{ type: "count" }}
+            transformers={[
+              /**
+               * TODO:
+               * This should all probably be happening on the data
+               * parsing/ingestion script instead. It's inefficient to
+               * be doing this for every client.
+               */
+              (item: string) => {
+                const answers = item.split(",").map((answer) => answer.trim());
+                // The survey allowed an incorrect answer of "G" to this question
+                // on accident, this is invalid and we need to remove it.
+                const cleanedAnswers = answers.filter((item) => item !== "G");
+
+                // YouTube was input as youtube once somehow...
+                const fixedAnswers = cleanedAnswers.map((answer) => {
+                  if (answer === "youtube") return "YouTube";
+                  return answer;
+                });
+
+                return fixedAnswers.join(",");
+              },
+            ]}
+            filters={[(item: string) => item !== ""]}
           />
           <Heading as="h4">
             What games-related communities are you aware of in Portland?

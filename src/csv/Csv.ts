@@ -1,5 +1,8 @@
 import { remove } from "../arrays/remove";
 
+export type CsvColumnTransformer = (item: string, index: number) => string;
+export type CsvColumnFilter = (item: string) => boolean;
+
 class CsvColumn {
   constructor(private items: string[]) {
     if (!items) throw new Error("Items is not defined in CsvColumn");
@@ -17,12 +20,12 @@ class CsvColumn {
     return this.items[index];
   }
 
-  transform(transformer: (item: string, index: number) => string) {
+  transform(transformer: CsvColumnTransformer) {
     this.items = this.items.map(transformer);
     return this;
   }
 
-  filter(filter: (item: string) => boolean) {
+  filter(filter: CsvColumnFilter) {
     this.items = this.items.filter(filter);
     return this;
   }
