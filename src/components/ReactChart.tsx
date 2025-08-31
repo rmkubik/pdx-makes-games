@@ -30,6 +30,10 @@ export const ReactChart = ({
             listStyle: "none",
             display: "grid",
             gridTemplateColumns: "auto 13ch",
+            // This is required for the graph elements to be sized correctly on Safari
+            // There's something to do with how the grid defaults on that platform
+            // that is different from chrome.
+            alignItems: "start",
           }}
         >
           <div
