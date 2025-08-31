@@ -382,7 +382,7 @@ export const Census = () => {
               "Visual Novels",
               "Narrative",
               "Roleplaying",
-              "Action/Adventure",
+              "Action / Adventure",
               "Platformer",
               "FPS ARPG",
               "Time Trial",
