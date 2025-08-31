@@ -25,7 +25,33 @@ export const Home = () => {
         </p>
       </Section>
       <Section>
-        <h2>PDX Games Census</h2>
+        <h2>Unconference</h2>
+        <p>
+          The Portland games community can use more events centered around
+          discussion with professionals. There are a lot of people in town, but
+          the options for game events are largely centered around hobbyist
+          activities.
+        </p>
+        <p>
+          The PDX Games Unconference is intended to facilitate conversations
+          between professional game creators.
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "2rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <Button as="a" href="/unconference">
+            Learn more
+          </Button>
+        </div>
+      </Section>
+      <Section>
+        <h2>Census</h2>
         <p>
           This survey was sent to various Portland area communities. It contains
           questions about the type of games work people do and the games-related
@@ -117,7 +143,7 @@ export const Home = () => {
         </p> */}
       </Section>
       <Section>
-        <h2>PDX Games Career Stories</h2>
+        <h2>Career Stories</h2>
         <p>Share your career history with other Portland game developers!</p>
         <p>
           Any definition of career is welcome here whether you make games full
