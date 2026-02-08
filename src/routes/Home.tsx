@@ -116,7 +116,7 @@ export const Home = () => {
           hope you find it useful!
         </p> */}
       </Section>
-      <Section>
+      {/* <Section>
         <h2>PDX Games Career Stories</h2>
         <p>Share your career history with other Portland game developers!</p>
         <p>
@@ -141,7 +141,7 @@ export const Home = () => {
             Tell your story!
           </Button>
         </div>
-      </Section>
+      </Section> */}
     </>
   );
 };
