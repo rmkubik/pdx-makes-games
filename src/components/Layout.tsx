@@ -7,6 +7,7 @@ import trees2 from "../../images/trees-tile-2.png";
 import trees3 from "../../images/trees-tile-3.png";
 import rain from "../../images/rain.png";
 import { useLayout } from "./useLayout";
+import { Outlet } from "react-router";
 
 const tiledImageWidth = 351;
 const tiledImageHeight = 163;
@@ -71,7 +72,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
         }}
       >
         <Header />
-        {children}
+        <Outlet />
       </main>
       <div
         style={{
