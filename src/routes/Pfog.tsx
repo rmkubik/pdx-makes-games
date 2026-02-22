@@ -55,7 +55,7 @@ export const Pfog = () => {
         </div>
         <p>
           Not heading to San Francisco for GDC? Hang out and chat with Portland
-          developers that week instead! March 9 - 13.
+          developers that week instead! <strong>March 9 - 13.</strong>
         </p>
         <div
           style={{
