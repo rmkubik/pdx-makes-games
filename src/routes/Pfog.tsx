@@ -36,7 +36,7 @@ export const Pfog = () => {
          * 
          * In this case we:
          * - Add overflow: hidden and the background styling to html
-         * - Add overflow: scroll and height: 100% to the body
+         * - Add overflow: scroll and height: 100% to the body, remove default margin
          * - Move any margins or paddings from body to main
          * 
          * Now we no longer overscroll and see the unstyled background.
@@ -51,6 +51,7 @@ export const Pfog = () => {
         body {
           font-family: sans-serif;
           
+          margin: 0;
           overflow: scroll;
           height: 100%;
         }
