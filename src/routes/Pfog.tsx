@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import pfogIcon from "images/pfog_icon.png";
+import greyzzImage from "images/greyzz.png";
 
 export const Pfog = () => {
   return (
@@ -19,6 +20,16 @@ export const Pfog = () => {
 
         body {
           font-family: sans-serif;
+          background: url(${greyzzImage});
+          background-color: #939cb8;
+          padding: 1rem;
+
+        }
+
+        main {
+          background: white;
+          border: 1px solid black;
+          border-radius: 16px;
         }
 
         a.link-button {
