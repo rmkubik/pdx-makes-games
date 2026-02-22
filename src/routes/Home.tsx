@@ -25,6 +25,26 @@ export const Home = () => {
         </p>
       </Section>
       <Section>
+        <h2>Portland Festival of Games</h2>
+        <p>
+          Not heading to San Francisco for GDC? Hang out and chat with Portland
+          developers that week instead! March 9 - 13.
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "2rem",
+            marginBottom: "2rem",
+          }}
+        >
+          <Button as="a" href="/pfog">
+            Check out PFOG
+          </Button>
+        </div>
+      </Section>
+      <Section>
         <h2>PDX Games Census</h2>
         <p>
           This survey was sent to various Portland area communities. It contains

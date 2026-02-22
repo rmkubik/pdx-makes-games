@@ -117,6 +117,9 @@ export const Pfog = () => {
           Otherwise, you might not even know we exist... 👀
         </p>
       </section>
+      <footer>
+        ⬅ <a href="/">portlandmakes.games</a>
+      </footer>
     </>
   );
 };
