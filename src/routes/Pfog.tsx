@@ -65,7 +65,7 @@ export const Pfog = () => {
           }}
         >
           <button>RSVP for PFOG Kickoff</button>
-          <span>March 9th @ 7PM</span>
+          <span>Monday, March 9th @ 7PM</span>
           <button>Join us on Discord</button>
           <span>Propose event ideas, meet people, keep up to date</span>
         </div>
