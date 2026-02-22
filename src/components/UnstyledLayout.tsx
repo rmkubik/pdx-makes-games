@@ -27,6 +27,7 @@ export const UnstyledLayout = ({ children }: PropsWithChildren) => {
 
             main {
               max-width: ${appMaxWidth}px;
+              margin: 0 auto,
             }
 
             main {
@@ -50,8 +51,6 @@ export const UnstyledLayout = ({ children }: PropsWithChildren) => {
           display: "flex",
           flexDirection: "column",
           gap: "2rem",
-          marginTop: "2rem",
-          margin: "0 auto",
         }}
       >
         <Outlet />
