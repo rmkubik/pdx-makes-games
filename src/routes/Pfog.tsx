@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import pfogIcon from "images/pfog_icon.png";
 import greyzzImage from "images/greyzz.png";
+import realPortlandFog from "images/real-portland-fog.jpg";
 
 export const Pfog = () => {
   return (
@@ -80,7 +81,21 @@ export const Pfog = () => {
         p {
           margin: 1rem 0;
         }
-          
+
+        figure {
+          max-width: 100%;
+
+          img {
+            box-shadow: 8px 8px black;
+            border: 4px solid black;
+            width: 100%;
+          }  
+
+          figcaption {
+            margin-top: 2rem;
+            padding-left: 2rem;
+          }
+        }
       `}</style>
       </Helmet>
       <section>
@@ -176,6 +191,16 @@ export const Pfog = () => {
           Otherwise, you might not even know we exist... 👀
         </p>
       </section>
+      <figure>
+        <img src={realPortlandFog} />
+        <figcaption>
+          Authentic Portland Fog
+          <br />
+          Captured Feb. 21, 2026 @ 12:01 PM
+          <br />
+          Upper Macleay Trail, Forest Park
+        </figcaption>
+      </figure>
       <footer>
         ⬅ <a href="/">pdxmakes.games</a>
       </footer>
