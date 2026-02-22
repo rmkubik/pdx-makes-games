@@ -17,6 +17,7 @@ export const UnstyledLayout = ({ children }: PropsWithChildren) => {
               margin: 0;
             }
 
+            a.link-button:hover,
             .button:hover,
             button:hover,
             input[type="submit"]:hover {

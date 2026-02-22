@@ -13,7 +13,7 @@ export const Pfog = () => {
           font-weight: bold;
         }
 
-        button,h1,h2,h3,h4,h5,h6 {
+        a.link-button,h1,h2,h3,h4,h5,h6 {
           font-family: Honeyblot, sans-serif;
         }
 
@@ -21,11 +21,14 @@ export const Pfog = () => {
           font-family: sans-serif;
         }
 
-        button {
+        a.link-button {
           background: white;
           border: 1px solid black;
           padding: 1rem 0.5rem;
           border-radius: 6px;
+          text-decoration: none;
+          color: inherit;
+          text-align: center;
 
           &:hover {
             cursor: pointer;
@@ -64,9 +67,23 @@ export const Pfog = () => {
             padding: "2rem",
           }}
         >
-          <button>RSVP for PFOG Kickoff</button>
+          <a
+            className="link-button"
+            href="https://www.eventbrite.com/e/pfog-kick-off-tickets-1983051788281"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RSVP for PFOG Kickoff
+          </a>
           <span>Monday, March 9th @ 7PM</span>
-          <button>Join us on Discord</button>
+          <a
+            className="link-button"
+            href="https://discord.gg/mJpRchvMP4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join us on Discord
+          </a>
           <span>Propose event ideas, meet people, keep up to date</span>
         </div>
       </section>
