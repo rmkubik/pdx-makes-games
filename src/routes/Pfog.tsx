@@ -118,7 +118,7 @@ export const Pfog = () => {
         </p>
       </section>
       <footer>
-        ⬅ <a href="/">portlandmakes.games</a>
+        ⬅ <a href="/">pdxmakes.games</a>
       </footer>
     </>
   );
