@@ -96,6 +96,46 @@ export const Pfog = () => {
             padding-left: 2rem;
           }
         }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+
+          thead {
+            border-bottom: 1px solid black;
+          }
+
+          th, td {
+            padding: 0.5rem;
+          }
+
+          th > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span:last-child {
+              font-weight: normal;
+            }
+          }
+
+          td > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+              text-align: center;
+            }
+
+            span:first-child {
+              font-weight: bold;
+            }
+          }
+        }
       `}</style>
       </Helmet>
       <section>
@@ -143,6 +183,130 @@ export const Pfog = () => {
           </a>
           <span>Propose event ideas, meet people, keep up to date</span>
         </div>
+      </section>
+      <section>
+        <h2>Tentative schedule</h2>
+        <p>
+          PFOG is a community organized week of events. The locations, dates,
+          and times listed here will be in flux until closer to the event week.
+          Please join the Discord to get specifics. We'll try to keep this list
+          updated.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <div>
+                  <span>Monday</span>
+                  <span>Mar 9th</span>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Tuesday</span>
+                  <span>Mar 10th</span>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Wednesday</span>
+                  <span>Mar 11th</span>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Thursday</span>
+                  <span>Mar 12th</span>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Friday</span>
+                  <span>Mar 13th</span>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Saturday</span>
+                  <span>Mar 14th</span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>
+                <div>
+                  <span>N Coffee Chat</span>
+                  <span>9am @ The Stacks Coffeehouse</span>
+                </div>
+              </td>
+              <td></td>
+              <td>
+                <div>
+                  <span>Casual Coworking</span>
+                  <span>1-4pm @ Steeplejack / Harder Day on Hawthorne</span>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span>NE Coffee Chat</span>
+                  <span>9-11am @ Extracto Coffee Roasters</span>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span>Park Day + Bike Ride</span>
+                  <span>1pm @ Mt. Tabor</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <span>PFOG Kickoff</span>
+                  <span>7pm @ Migration Brewing</span>
+                  <span>
+                    <a href="https://www.eventbrite.com/e/pfog-kick-off-tickets-1983051788281">
+                      RSVP
+                    </a>
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span>Custom Hardware Meetup</span>
+                  <span>7pm @ TBD</span>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span>Board Game Night</span>
+                  <span>6pm @ Baerlic Brewery & Taproom</span>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span>1000 Blank Cards</span>
+                  <span>7pm @ TBD</span>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span>PFOG Closing + Showcase</span>
+                  <span>7pm @ TBD</span>
+                  <span>
+                    <a href="https://www.eventbrite.com/e/pfog-closing-showcase-tickets-1983166958759">
+                      RSVP
+                    </a>
+                  </span>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section>
         <h2>What is this?</h2>
