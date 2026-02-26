@@ -172,7 +172,7 @@ export const Pfog = () => {
           >
             RSVP for PFOG Kickoff
           </a>
-          <span>Monday, March 9th @ 7PM</span>
+          <span>Monday, March 9th @ 6PM</span>
           <a
             className="link-button"
             href="https://discord.gg/mJpRchvMP4"
