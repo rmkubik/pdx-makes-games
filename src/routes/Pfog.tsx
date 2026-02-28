@@ -275,7 +275,7 @@ export const Pfog = () => {
                 <td>
                   <div>
                     <span>PFOG Kickoff</span>
-                    <span>7pm @ Migration Brewing</span>
+                    <span>6-9pm @ Migration Brewing</span>
                     <span>
                       <a href="https://www.eventbrite.com/e/pfog-kick-off-tickets-1983051788281">
                         RSVP
@@ -292,7 +292,7 @@ export const Pfog = () => {
                 <td>
                   <div>
                     <span>Board Game Night</span>
-                    <span>6pm @ Baerlic Brewery & Taproom</span>
+                    <span>6-10pm @ Baerlic Brewery & Taproom</span>
                   </div>
                 </td>
                 <td>
@@ -304,7 +304,7 @@ export const Pfog = () => {
                 <td>
                   <div>
                     <span>PFOG Closing + Showcase</span>
-                    <span>7pm @ TBD</span>
+                    <span>7-10pm @ TBD</span>
                     <span>
                       <a href="https://www.eventbrite.com/e/pfog-closing-showcase-tickets-1983166958759">
                         RSVP
