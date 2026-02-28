@@ -152,7 +152,7 @@ export const Pfog = () => {
         </div>
         <p>
           Not heading to San Francisco for GDC? Hang out and chat with Portland
-          developers that week instead! <strong>March 9 - 13.</strong>
+          developers that week instead! <strong>March 9 - 14.</strong>
         </p>
         <div
           style={{
@@ -322,7 +322,7 @@ export const Pfog = () => {
         <h2>What is this?</h2>
         <p>
           PFOG is a week of community organized events around Portland, March
-          9-13. We’re putting together a kick off and a closing event. You’re
+          9-14. We’re putting together a kick off and a closing event. You’re
           bringing the rest!
         </p>
         <p>We’re inspired by other community led events like:</p>
