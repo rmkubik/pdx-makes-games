@@ -244,18 +244,26 @@ export const Pfog = () => {
                   </div>
                 </td>
                 <td></td>
-                <td>
-                  <div>
-                    <span>Casual Coworking</span>
-                    <span>1-4pm @ Steeplejack / Harder Day on Hawthorne</span>
-                  </div>
-                </td>
+                <td></td>
                 <td>
                   <div>
                     <span>NE Coffee Chat</span>
                     <span>9-11am @ Extracto Coffee Roasters</span>
                   </div>
                 </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <div>
+                    <span>Casual Coworking</span>
+                    <span>1-4pm @ Steeplejack / Harder Day on Hawthorne</span>
+                  </div>
+                </td>
+                <td></td>
                 <td>
                   <div>
                     <span>Park Day + Bike Ride</span>
@@ -278,7 +286,7 @@ export const Pfog = () => {
                 <td>
                   <div>
                     <span>Custom Hardware Meetup</span>
-                    <span>7pm @ TBD</span>
+                    <span>7pm @ Havalina</span>
                   </div>
                 </td>
                 <td>
