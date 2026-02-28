@@ -175,6 +175,15 @@ export const Pfog = () => {
           <span>Monday, March 9th @ 6PM</span>
           <a
             className="link-button"
+            href="https://www.eventbrite.com/e/pfog-closing-showcase-tickets-1983166958759"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RSVP for PFOG Showcase
+          </a>
+          <span>Monday, March 14th @ 7PM</span>
+          <a
+            className="link-button"
             href="https://discord.gg/mJpRchvMP4"
             target="_blank"
             rel="noopener noreferrer"
