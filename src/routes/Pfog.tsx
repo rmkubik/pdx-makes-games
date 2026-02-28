@@ -301,10 +301,11 @@ export const Pfog = () => {
                     <span>7pm @ TBD</span>
                   </div>
                 </td>
+                <td></td>
                 <td>
                   <div>
                     <span>PFOG Closing + Showcase</span>
-                    <span>7-10pm @ TBD</span>
+                    <span>7-10pm @ ADX</span>
                     <span>
                       <a href="https://www.eventbrite.com/e/pfog-closing-showcase-tickets-1983166958759">
                         RSVP
@@ -312,7 +313,6 @@ export const Pfog = () => {
                     </span>
                   </div>
                 </td>
-                <td></td>
               </tr>
             </tbody>
           </table>
