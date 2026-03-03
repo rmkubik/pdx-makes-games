@@ -28,7 +28,7 @@ export const Home = () => {
         <h2>Portland Festival of Games</h2>
         <p>
           Not heading to San Francisco for GDC? Hang out and chat with Portland
-          developers that week instead! March 9 - 13.
+          developers that week instead! March 9 - 14.
         </p>
         <div
           style={{

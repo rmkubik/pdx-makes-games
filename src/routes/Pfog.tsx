@@ -307,7 +307,7 @@ export const Pfog = () => {
                 <td>
                   <div>
                     <span>1000 Blank Cards</span>
-                    <span>7pm @ TBD</span>
+                    <span>7pm @ Dear Sandy</span>
                   </div>
                 </td>
                 <td></td>
