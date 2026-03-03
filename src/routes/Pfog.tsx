@@ -295,7 +295,7 @@ export const Pfog = () => {
                 <td>
                   <div>
                     <span>Custom Hardware Meetup</span>
-                    <span>7pm @ Havalina</span>
+                    <span>6pm @ Virtua Gallery</span>
                   </div>
                 </td>
                 <td>
