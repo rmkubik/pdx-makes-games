@@ -201,7 +201,7 @@ export const Pfog = () => {
           Please join the Discord to get specifics. We'll try to keep this list
           updated.
         </p>
-        <div style={{ width: "100%", overflow: "scroll" }}>
+        <div style={{ width: "100%", overflow: "auto" }}>
           <table>
             <thead>
               <tr>
