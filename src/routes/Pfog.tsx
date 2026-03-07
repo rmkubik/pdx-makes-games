@@ -310,7 +310,12 @@ export const Pfog = () => {
                     <span>7pm @ Dear Sandy</span>
                   </div>
                 </td>
-                <td></td>
+                <td>
+                  <div>
+                    <span>Retro Gaming</span>
+                    <span>6-9pm @ Retro Game Bar</span>
+                  </div>
+                </td>
                 <td>
                   <div>
                     <span>PFOG Closing + Showcase</span>
