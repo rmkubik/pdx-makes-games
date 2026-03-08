@@ -249,7 +249,7 @@ export const Pfog = () => {
                 <td>
                   <div>
                     <span>N Coffee Chat</span>
-                    <span>9am @ The Stacks Coffeehouse</span>
+                    <span>11am @ The Stacks Coffeehouse</span>
                   </div>
                 </td>
                 <td></td>
