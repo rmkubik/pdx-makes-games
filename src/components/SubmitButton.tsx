@@ -5,14 +5,20 @@ import { outlineWithShadowSmall } from "src/theme/sharedStyles";
 export const SubmitButton = ({
   children,
   style = {},
-}: PropsWithChildren<{ style?: CSSProperties }>) => {
+  color,
+  bg,
+}: PropsWithChildren<{
+  style?: CSSProperties;
+  color?: string;
+  bg?: string;
+}>) => {
   return (
     <input
       type="submit"
       style={{
         ...outlineWithShadowSmall,
-        backgroundColor: colors.darkGreen,
-        color: colors.offWhite,
+        backgroundColor: bg ?? colors.darkGreen,
+        color: color ?? colors.offWhite,
         fontWeight: "bold",
         fontSize: "1.15rem",
         padding: "0.5rem",

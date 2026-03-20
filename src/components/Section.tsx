@@ -1,18 +1,27 @@
 import React, { CSSProperties } from "react";
 import { PropsWithChildren } from "react";
 import { colors } from "../theme/palette";
-import { outlineWithShadowLarge } from "src/theme/sharedStyles";
+import {
+  outlineWithShadowLarge,
+  outlineWithShadowLargeForHome,
+} from "src/theme/sharedStyles";
 
 export const Section = ({
   children,
+  bg,
+  forHome,
   style = {},
-}: PropsWithChildren<{ style?: CSSProperties }>) => {
+}: PropsWithChildren<{
+  style?: CSSProperties;
+  bg?: string;
+  forHome?: boolean;
+}>) => {
   return (
     <section
       style={{
-        ...outlineWithShadowLarge,
+        ...(forHome ? outlineWithShadowLargeForHome : outlineWithShadowLarge),
         padding: "2rem",
-        backgroundColor: colors.offWhite,
+        backgroundColor: bg ?? colors.offWhite,
         ...style,
       }}
     >

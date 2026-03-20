@@ -13,10 +13,10 @@ export const App = () => {
       <LayoutProvider>
         <Routes>
           <Route element={<Layout />}>
-            <Route index element={<Home />} />
             <Route path="census" element={<Census />} />
           </Route>
           <Route element={<UnstyledLayout />}>
+            <Route index element={<Home />} />
             <Route path="pfog" element={<Pfog />} />
           </Route>
         </Routes>

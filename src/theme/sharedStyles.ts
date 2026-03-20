@@ -1,5 +1,10 @@
 import { colors } from "./palette";
 
+export const outlineWithShadowLargeForHome = {
+  border: `3px solid ${colors.offBlack}`,
+  boxShadow: `4px 4px 12px #43472e`,
+};
+
 export const outlineWithShadowLarge = {
   border: `4px solid ${colors.offBlack}`,
   boxShadow: `8px 8px ${colors.offBlack}`,
