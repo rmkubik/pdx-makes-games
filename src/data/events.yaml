@@ -1,0 +1,75 @@
+# Event Schema
+# check schema in:
+# scripts/transform-events-data.ts
+#
+# name: string
+# start: Datetime
+# end: Datetime
+# link: url
+# location: string
+# address: string
+# locLink: url
+# desc: string
+# desc.short: string
+# desc.long: string
+# rsvp: url
+
+events:
+  - name: PIGCON
+    start: 2026-05-30
+    end: 2026-05-31
+    link: https://pigcon.pigsquad.com/
+    location: Norse Hall, Portland, OR
+    added: 2026-04-25
+  - name: GameStorm 27
+    start: 2027-03-18
+    end: 2027-03-21
+    link: https://tabletop.events/conventions/gamestorm-27
+    location: Portland, OR
+    added: 2026-04-25
+  - name: Seattle Indies Expo (SIX)
+    start: 2026-09-06 12:00 PM
+    end: 2026-09-06 9:00 PM
+    link: https://six.seattleindies.org/
+    location: Seattle, WA
+    added: 2026-04-25
+  - name: Seattle Loves Indie Creators Expo (SLICE)
+    start: 2026-09-02 8:00 AM
+    end: 2026-09-02 9:30 PM
+    link: https://seattleslice.org/
+    location: Seattle, WA
+    added: 2026-04-25
+  - name: PAX West
+    start: 2026-09-04
+    end: 2026-09-07
+    link: https://west.paxsite.com/
+    location: Seattle, WA
+    added: 2026-04-25
+  - name: Portland Retro Gaming Expo
+    start: 2026-10-09
+    end: 2026-10-11
+    link: https://www.retrogamingexpo.com/
+    location: Oregon Convention Center, Portland, OR
+    added: 2026-04-25
+  - name: Vancouver Game Garden
+    start: 2026-06-13
+    end: 2026-06-14
+    link: https://vangamegarden.com/
+    location: Vancouver, CA
+    added: 2026-04-25
+  - name: Field Games/Park Day
+    start: 2026-04-26 2:00 PM
+    end: 2026-04-26 6:00 PM
+    location: Overlook Park, Portland, OR
+    added: 2026-04-25
+  - name: Power Point Party ✨ Gamer Edition✨
+    start: 2026-05-23 6:00 PM
+    end: 2026-05-23 9:00 PM
+    location: TBD
+    rsvp: https://calendar.app.google/4fD1dZE9mLyAxMvt9
+    added: 2026-04-25
+  # - name: Full Indie Summit
+  #   start: 2026
+  #   end: 2026
+  #   link: https://www.fullindie.com/about-the-summit
+  #   location: Vancouver, CA

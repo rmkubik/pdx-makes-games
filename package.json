@@ -16,12 +16,15 @@
     "@types/react-dom": "^19.1.2",
     "@types/react-helmet": "^6.1.11",
     "csv": "^6.4.1",
+    "date-fns": "^4.1.0",
     "parcel": "^2.12.0",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "parcel-transformer-csv": "^0.0.3",
     "process": "^0.11.10",
     "ts-node": "^10.9.2",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "zod": "^4.3.6",
+    "zx": "^8.8.5"
   },
   "scripts": {
     "start": "parcel src/index.html",
@@ -29,6 +32,7 @@
     "build": "parcel build src/index.html",
     "clear-cache": "rm -rf dist .parcel-cache",
     "script:remove-sensitive-data": "ts-node scripts/remove-sensitive-columns-from-survey.ts",
+    "script:transform-events": "ts-node scripts/transform-events-data.ts",
     "test": "vitest"
   },
   "author": "Ryan Kubik",
