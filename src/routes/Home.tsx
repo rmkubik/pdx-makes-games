@@ -177,6 +177,14 @@ export const Home = () => {
       </Section>
       <Section bg="#ecf0e9" forHome>
         <h2>📆 Community Calendar</h2>
+        <p>
+          Events are put on this calendar when PDX Makes Games community members
+          voice interest in them.
+        </p>
+        <p>
+          We also include events organized in{" "}
+          <a href="https://discord.gg/mNyyE9Fptf">the PFOG Discord</a>.
+        </p>
         <iframe
           src="https://calendar.google.com/calendar/embed?src=cGR4bWFrZXNnYW1lc0BnbWFpbC5jb20"
           style={{
@@ -187,16 +195,6 @@ export const Home = () => {
           width="100%"
           height="600"
         ></iframe>
-        <h3>What's on here?</h3>
-        <p>
-          Events are put on this calendar when PDX Makes Games community members
-          voice interest in them. They're here so other Portland game makers can
-          discover cool happenings in town.
-        </p>
-        <p>
-          We also include events organized in{" "}
-          <a href="https://discord.gg/mNyyE9Fptf">the PFOG Discord</a>.
-        </p>
         <Events />
       </Section>
       <Section bg="#ecf0e9" forHome>
