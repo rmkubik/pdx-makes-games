@@ -65,11 +65,18 @@ events:
   - name: Power Point Party ✨ Gamer Edition✨
     start: 2026-05-23 6:00 PM
     end: 2026-05-23 9:00 PM
-    location: TBD
+    location: ADX
     rsvp: https://calendar.app.google/4fD1dZE9mLyAxMvt9
     added: 2026-04-25
-  # - name: Full Indie Summit
-  #   start: 2026
-  #   end: 2026
-  #   link: https://www.fullindie.com/about-the-summit
-  #   location: Vancouver, CA
+  - name: Genius Northwest
+    start: 2026-10-10
+    end: 2026-10-12
+    location: Poulsbo, Washington
+    link: https://geniusnw.com/
+    added: 2026-04-26
+  - name: Full Indie Summit
+    start: 2026-09-20
+    end: 2026-09-20
+    link: https://www.fullindie.com/about-the-summit
+    location: Vancouver, CA
+  -

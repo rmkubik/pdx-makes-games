@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { Section } from "../components/Section";
 import { Button } from "../components/Button";
 import { EmailInput } from "../components/EmailInput";
@@ -7,11 +7,43 @@ import { useLayout } from "src/components/useLayout";
 import { Helmet } from "react-helmet";
 import realPortlandFog from "images/real-portland-fog.jpg";
 import { outlineWithShadowLargeForHome } from "src/theme/sharedStyles";
+import { formatGoogleCalendar } from "../formatGoogleCalendar";
+import { colors } from "src/theme/palette";
 
 export const Home = () => {
   const { setAppMaxWidth } = useLayout();
   useLayoutEffect(() => {
     setAppMaxWidth(800);
+  }, []);
+
+  useLayoutEffect(() => {
+    formatGoogleCalendar.init({
+      calendarUrl:
+        "https://www.googleapis.com/calendar/v3/calendars/pdxmakesgames@gmail.com/events?key=AIzaSyCjUO1EmzoEWpHGWpoPoc5zj4w5h8LUhME",
+      past: true,
+      upcoming: true,
+      sameDayTimes: true,
+      dayNames: true,
+      pastTopN: 3,
+      upcomingTopN: 3,
+      recurringEvents: true,
+      itemsTagName: "li",
+      upcomingSelector: "#events-upcoming",
+      upcomingHeading: "",
+      pastSelector: "#events-past",
+      pastHeading: "",
+      format: [
+        "*summary*",
+        "<br>",
+        "*date*",
+        "<br>",
+        "*location*",
+        "<br>",
+        "*description*",
+      ],
+      timeMin: "2016-06-03T10:00:00-07:00",
+      timeMax: "2040-06-03T10:00:00-07:00",
+    });
   }, []);
 
   return (
@@ -45,6 +77,29 @@ export const Home = () => {
               background-color: rgba(0, 0, 0, 0.3);
               transform: scale(1.05); /* prevents edge cutoff */
               z-index: -1;
+            }
+
+            .events-list {
+              padding: 0;
+              list-style: none;
+              margin: 0;
+
+              display: flex;
+              flex-direction: column;
+              gap: 1.2rem;
+
+              .summary {
+                font-weight: bold;
+              }
+              .date {}
+              .location {
+                font-style: italic;
+              }
+              .description {
+                display: block;
+                margin-top: 0.5rem;
+                padding-left: 1rem;
+              }
             }
           `}
         </style>
@@ -142,6 +197,7 @@ export const Home = () => {
           We also include events organized in{" "}
           <a href="https://discord.gg/mNyyE9Fptf">the PFOG Discord</a>.
         </p>
+        <Events />
       </Section>
       <Section bg="#ecf0e9" forHome>
         <h2>☁️ Portland Festival of Games 2026</h2>
@@ -284,3 +340,52 @@ export const Home = () => {
     </>
   );
 };
+
+function Events() {
+  const [tab, setTab] = useState<"upcoming" | "past">("upcoming");
+
+  return (
+    <div>
+      <div
+        style={{
+          display: tab === "upcoming" ? "initial" : "none",
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <h3 style={{ flex: 1 }}>Upcoming Events</h3>{" "}
+          <Button
+            color={colors.offBlack}
+            bg={"white"}
+            style={{
+              fontSize: "0.9rem",
+            }}
+            onClick={() => setTab("past")}
+          >
+            See recent events
+          </Button>
+        </div>
+        <ul id="events-upcoming" className="events-list"></ul>
+      </div>
+      <div
+        style={{
+          display: tab === "past" ? "initial" : "none",
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <h3 style={{ flex: 1 }}>Recent Events</h3>{" "}
+          <Button
+            color={colors.offBlack}
+            bg={"white"}
+            style={{
+              fontSize: "0.9rem",
+            }}
+            onClick={() => setTab("upcoming")}
+          >
+            See upcoming events
+          </Button>
+        </div>
+        <ul id="events-past" className="events-list"></ul>
+      </div>
+    </div>
+  );
+}
