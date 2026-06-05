@@ -3,6 +3,8 @@
  *
  * Copyright 2017, Milan Lund
  *
+ * 6/5/26
+ * I have made a few edits and bugfixes for my purposes too.
  */
 
 export const formatGoogleCalendar = (() => {
